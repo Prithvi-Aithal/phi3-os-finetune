@@ -24,7 +24,7 @@ phi3-os-finetune/
 ├── README.md
 ├── requirements.txt
 ├── data/
-│   └── sample_data.jsonl       # Sample Q&A pairs from the training set
+│   └── full_data.jsonl         # Q&A training set (one JSON object per line)
 └── notebooks/
     └── finetune.ipynb          # Full fine-tuning notebook (run on Colab)
 ```
