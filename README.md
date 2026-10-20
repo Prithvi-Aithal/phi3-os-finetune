@@ -1,6 +1,6 @@
 # phi3-mini-os-finetuned 🧠
 
-Fine-tuning [Phi-3 Mini](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct) (3.8B) on a custom Operating Systems dataset using **QLoRA** — training only 0.26% of parameters on a free Colab T4 GPU.
+Fine-tuning [Phi-3 Mini](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct) (3.8B) on a custom Operating Systems dataset using **QLoRA** — training only ~0.23% of parameters on a free Colab T4 GPU.
 
 🤗 **Model on HuggingFace:** [Prithvi-Aithal/phi3-mini-os-finetuned](https://huggingface.co/Prithvi-Aithal/phi3-mini-os-finetuned)
 
@@ -76,7 +76,7 @@ print(ask_os("Explain the Banker's Algorithm."))
 | Technique | Why |
 |-----------|-----|
 | **4-bit quantization (NF4)** | Reduces Phi-3's memory from ~8GB → ~3GB |
-| **LoRA (r=16)** | Trains only 0.26% of parameters, prevents catastrophic forgetting |
+| **LoRA (r=16)** | Trains only ~0.23% of parameters, prevents catastrophic forgetting |
 | **SFTTrainer (TRL)** | Handles chat template formatting automatically |
 | **Gradient checkpointing** | Lets us use larger batch sizes without OOM |
 
