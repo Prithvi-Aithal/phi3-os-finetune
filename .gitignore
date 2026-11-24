@@ -1,0 +1,23 @@
+# Training output (LoRA adapter, checkpoints); the model lives on Hugging Face
+phi3-os-finetuned/
+notebooks/phi3-os-finetuned/
+checkpoint-*/
+*.safetensors
+*.bin
+*.gguf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets (Hugging Face token etc.)
+.env
+
+# OS
+.DS_Store
+Thumbs.db
